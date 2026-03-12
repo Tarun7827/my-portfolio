@@ -4,7 +4,8 @@ export interface Project {
   shortDescription: string;
   detailedDescription: string;
   techStack: string[];
-  image?: string;
+  image?: string[];
+  video?: string[];
   platforms?: string[];
   company?: string;
   year?: string;
