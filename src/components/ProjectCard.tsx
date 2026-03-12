@@ -16,7 +16,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
       <div className="flex flex-col gap-4">
         {/* Header */}
         <div>
-          <h3 className="text-xl font-bold text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          <h3 className="text-xl font-bold text-zinc-900 dark:text-white group-hover:text-blue-600 text-ellipsis overflow-hidden whitespace-nowrap dark:group-hover:text-blue-400 transition-colors">
             {project.title}
           </h3>
           {project.company && (
