@@ -28,13 +28,36 @@ export interface Achievement {
   icon?: string;
 }
 
-export const aboutData = {
+export interface About {
+  name: string;
+  title: string;
+  summary: string;
+  email: string;
+  phone: string;
+  linkedin: string;
+  github: string;
+  education: Education;
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  year: string;
+}
+
+export interface TechStack {
+  category: string;
+  technologies: string[];
+}
+
+export const aboutData: About = {
   name: "Tarun Kumar",
   title: "Senior Software Engineer",
   summary: "Senior Software Engineer with 9+ years of experience creating game and app experiences for Android, iOS, PC, and VR platforms. Expertise in C#, JavaScript & TypeScript programming, multiplayer game development, web-socket and RESTful API integration, third-party SDKs, and performance optimization for scalable solutions.",
   email: "tarun7827@gmail.com",
   phone: "+91 7503503956",
   linkedin: "https://www.linkedin.com/in/tarun7827/",
+  github: "https://github.com/Tarun7827",
   education: {
     degree: "Bachelor of Technology in Computer Science",
     institution: "Krishna Engineering College, AKTU",
@@ -75,15 +98,36 @@ export const achievements: Achievement[] = [
   }
 ];
 
-export const techStack = {
-  "Engines & Frameworks": ["Unity 3D", "React Native", "React.js", "Next.js", "Node.js"],
-  "Programming Languages": ["C# (Unity, game development)", "JavaScript", "TypeScript", "Java", "Kotlin"],
-  "Platforms": ["Android", "iOS", "PC", "VR (Quest, HTC Vive, GearVR)"],
-  "Tools": ["Cursor", "Visual Studio", "JetBrains Rider", "Android Studio", "Git", "Jenkins", "JIRA"],
-  "Networking": ["Web Sockets", "Photon Networking", "RESTful APIs", "Socket.io"],
-  "Database": ["MySQL", "PostgreSQL", "MongoDB"],
-  "Core Competencies": ["Architecture Design", "Performance Optimization", "CI/CD", "Team Leadership", "Rapid Prototyping", "Agile Development"]
-};
+export const techStack: TechStack[] = [
+  {
+    category: "Engines & Frameworks",
+    technologies: ["Unity 3D", "React Native", "React.js", "Next.js", "Node.js"]
+  },
+  {
+    category: "Programming Languages",
+    technologies: ["C# (Unity, game development)", "JavaScript", "TypeScript", "Java", "Kotlin"]
+  },
+  {
+    category: "Platforms",
+    technologies: ["Android", "iOS", "PC", "VR (Quest, HTC Vive, GearVR)"]
+  },
+  {
+    category: "Tools",
+    technologies: ["Cursor", "Visual Studio", "JetBrains Rider", "Android Studio", "Git", "Jenkins", "JIRA"]
+  },
+  {
+    category: "Networking",
+    technologies: ["Web Sockets", "Photon Networking", "RESTful APIs", "Socket.io"]
+  },
+  {
+    category: "Database",
+    technologies: ["MySQL", "PostgreSQL", "MongoDB"]
+  },
+  {
+    category: "Core Competencies",
+    technologies: ["Architecture Design", "Performance Optimization", "CI/CD", "Team Leadership", "Rapid Prototyping", "Agile Development"]
+  }
+];
 
 export const experiences: Experience[] = [
   {
