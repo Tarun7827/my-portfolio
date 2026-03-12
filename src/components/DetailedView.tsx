@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Project } from '@/data/portfolio';
+import MediaCarousel, { MediaItem } from './MediaCarousel';
 
 interface DetailedViewProps {
   project: Project | null;
@@ -10,6 +11,25 @@ interface DetailedViewProps {
 }
 
 export default function DetailedView({ project, isOpen, onClose }: DetailedViewProps) {
+  // Combine images and videos into media array
+  const mediaItems = useMemo<MediaItem[]>(() => {
+    const items: MediaItem[] = [];
+    
+    if (project?.image && project.image.length > 0) {
+      project.image.forEach((img) => {
+        items.push({ type: 'image', src: img, alt: project.title });
+      });
+    }
+    
+    if (project?.video && project.video.length > 0) {
+      project.video.forEach((vid) => {
+        items.push({ type: 'video', src: vid, alt: project.title });
+      });
+    }
+    
+    return items;
+  }, [project]);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -76,16 +96,10 @@ export default function DetailedView({ project, isOpen, onClose }: DetailedViewP
             </div>
           </div>
 
-          {/* Image placeholder */}
-          {project.image && (
-            <div className="mb-6 rounded-xl overflow-hidden bg-zinc-100 dark:bg-zinc-800">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-64 object-cover"
-              />
-            </div>
-          )}
+          {/* Media Carousel */}
+          {/* {mediaItems.length > 0 && ( */}
+            <MediaCarousel media={mediaItems} title={project.title} />
+          {/* )} */}
 
           {/* Detailed Description */}
           <div className="mb-6">
