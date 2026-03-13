@@ -53,7 +53,7 @@ export interface TechStack {
 export const aboutData: About = {
   name: "Tarun Kumar",
   title: "Senior Software Engineer",
-  summary: "Senior Software Engineer with 9+ years of experience creating game and app experiences for Android, iOS, PC, and VR platforms. Expertise in C#, JavaScript & TypeScript programming, multiplayer game development, web-socket and RESTful API integration, third-party SDKs, and performance optimization for scalable solutions.",
+  summary: "AI Powered Senior Software Engineer with 9+ years of experience creating game and app experiences for Android, iOS, PC, and VR platforms. Expertise in C#, JavaScript & TypeScript programming, multiplayer game development, web-socket and RESTful API integration, third-party SDKs, and performance optimization for scalable solutions.",
   email: "tarun7827@gmail.com",
   phone: "+91 7503503956",
   linkedin: "https://www.linkedin.com/in/tarun7827/",
@@ -113,7 +113,7 @@ export const techStack: TechStack[] = [
   },
   {
     category: "Tools",
-    technologies: ["Cursor", "Visual Studio", "JetBrains Rider", "Android Studio", "Git", "Jenkins", "JIRA"]
+    technologies: ["Cursor", "CursorAI", "Visual Studio", "JetBrains Rider", "Android Studio", "FigmaMCP", "Git", "Jenkins", "JIRA"]
   },
   {
     category: "Networking",
@@ -144,7 +144,7 @@ export const experiences: Experience[] = [
       "Built scalable architectures and features to enhance app performance, delivering a smooth and optimized user experience",
       "Collaborated with cross-functional teams to review project specifications and design technology solutions"
     ],
-    projects: ["Ludo Gold Rush", "Tez Rummy", "Cricket Tambola", "Zupee Khelo Jeeto", "Ludo", "Zupee Super Over", "Carrom", "Snakes and Ladders Plus"]
+    projects: ["Ludo Gold Rush", "Tez Rummy", "Carrom", "Snakes and Ladders Plus", "Cricket Tambola", "Zupee Khelo Jeeto", "Ludo", "Zupee Super Over"]
   },
   {
     id: "2",
@@ -189,54 +189,87 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    id: "ludo-gold-rush",
-    title: "Ludo Gold Rush",
-    shortDescription: "A real-money multiplayer Ludo game with advanced matchmaking and live ops.",
-    detailedDescription: "Led the development of Ludo Gold Rush, a flagship mobile game featuring real-money gameplay, advanced matchmaking algorithms, and robust live operations. Implemented scalable architecture for handling thousands of concurrent players with optimized performance and minimal crash rates.",
-    techStack: ["Unity 3D", "C#", "Socket.io", "RESTful APIs", "Android Studio", "Xcode"],
-    platforms: ["Android", "iOS"],
-    company: "Zupee",
-    year: "2021-Present",
-    achievements: [
-      "Reduced crash rates by 35% through profiling and optimization",
-      "Improved load times by 25%",
-      "Implemented real-time multiplayer with Photon Networking"
-    ]
-  },
-  {
     id: "tez-rummy",
     title: "Tez Rummy",
-    shortDescription: "Real-money rummy game with sophisticated AI and tournament systems.",
-    detailedDescription: "Developed Tez Rummy, a competitive rummy game featuring sophisticated AI opponents, tournament systems, and real-money gameplay. Built modular architecture for easy feature additions and maintained high performance across Android and iOS platforms.",
-    techStack: ["React Native", "JavaScript", "TypeScript", "RESTful APIs", "Socket.io", "Android Studio", "Xcode"],
+    shortDescription: "A real-money rummy game with real-time multiplayer and tournament systems.",
+    detailedDescription: "Tez Rummy is a real-money rummy game with real-time multiplayer and tournament systems. It features a competitive rummy game. The app also includes a KYC and Wallet system for secure and seamless gameplay.",
+    techStack: ["React Native", "JavaScript", "TypeScript", "CursorAI", "FigmaMCP", "RESTful APIs", "Socket.io", "Android Studio", "Xcode"],
     platforms: ["Android", "iOS"],
     company: "Zupee",
     year: "2021-Present",
     achievements: [
       "Designed reusable tournament module",
-      "Implemented complex game logic with optimal performance",
-      "Integrated secure payment systems"
+      "Implemeented KYC and Wallet system",
+      "Integrated secure payment systems",
+      "UI optimization and performance improvements for enhanced user experience"
     ]
   },
   {
-    id: "cricket-tambola",
-    title: "Cricket Tambola",
-    shortDescription: "Innovative cricket-themed tambola game combining sports and traditional gaming.",
-    detailedDescription: "Created Cricket Tambola, a unique fusion of cricket and traditional tambola (bingo) gameplay. Developed engaging mechanics that appeal to cricket enthusiasts while maintaining the excitement of tambola, with real-time multiplayer capabilities.",
-    techStack: ["Unity 3D", "C#", "Socket.io", "Android Studio"],
-    platforms: ["Android"],
+    id: "ludo-gold-rush",
+    title: "Ludo Gold Rush",
+    shortDescription: "A Free to Play multiplayer Ludo game with advanced matchmaking and live ops.",
+    detailedDescription: "Ludo Gold Rush is a multiplayer Free to Play Ludo Game with cool features like kingdom building and upgrading, power-ups, daily rewards, and more",
+    techStack: ["Unity 3D", "C#", "Socket.io", "RESTful APIs", "Android Studio"],
+    platforms: ["Android", "iOS"],
     company: "Zupee",
-    year: "2021-Present"
+    year: "2021-Present",
+    achievements: [
+      "Implemented ludo game logic and scalable architecture for core feature of power-ups",
+      "Led the implementation of socket and event based architecture for real-time multiplayer",
+      "Optimized App crash rates and build size"
+    ]
   },
   {
     id: "zupee-super-over",
     title: "Zupee Super Over",
     shortDescription: "Fast-paced cricket game based on the exciting Super Over format.",
-    detailedDescription: "Developed Zupee Super Over, a rapid-fire cricket game that captures the thrill of cricket's Super Over format. Implemented intuitive controls, realistic physics, and competitive multiplayer modes with leaderboards.",
-    techStack: ["Unity 3D", "C#", "Socket.io", "Android Studio"],
+    detailedDescription: "Developed Zupee Super Over, a rapid-fire cricket game that captures the thrill of cricket's Super Over format. In the game both user and opponent choose a score desplayed button. User with higher score wins the game.",
+    techStack: ["React Native", "JavaScript", "TypeScript", "CursorAI", "RESTful APIs", "Socket.io", "Android Studio"],
     platforms: ["Android"],
     company: "Zupee",
-    year: "2021-Present"
+    year: "2021-Present",
+    achievements: [
+      "Led the entire development of the game from ideation to release",
+      "Implemented intuitive controls, and competitive multiplayer handling",
+      "Implemented game logic for Super Over and score selection",
+      "Optimized app performance and crash rates",
+      "Implemented UI optimization and performance improvements for enhanced user experience"
+    ]
+  },
+  {
+    id: "carrom-ninja",
+    title: "Carrom Ninja",
+    shortDescription: "A fun and challenging carrom game with real-time multiplayer.",
+    detailedDescription: "Carrom Ninja is a fun and challenging carrom game with real-time multiplayer. It features a competitive carrom game.",
+    techStack: ["Unity 3D", "C#", "Socket.io", "RESTful APIs", "Android Studio"],
+    platforms: ["Android"],
+    company: "Zupee",
+    year: "2021-Present",
+    achievements: [
+      "Led the entire development of the game from ideation to release",
+      "Implemented intuitive controls for striker movement, power for shot",
+      "Implemented game logic for Carrom game play",
+      "Developed a Headless unity build that validates user moves and token movements and scores to make it hack proof",
+      "Optimized app performance and crash rates",
+      "Implemented UI optimization and performance improvements for enhanced user experience"
+    ]
+  },
+  {
+    id: "snakes-and-ladders-plus",
+    title: "Snakes and Ladders Plus",
+    shortDescription: "A fun and challenging snakes and ladders game with real-time multiplayer.",
+    detailedDescription: "Snakes and Ladders Plus is a fun and challenging board game with real-time multiplayer. It features a competitive snakes and ladders game.",
+    techStack: ["React Native", "JavaScript", "TypeScript", "CursorAI", "FigmaMCP", "RESTful APIs", "Socket.io", "Android Studio"],
+    platforms: ["Android"],
+    company: "Zupee",
+    year: "2021-Present",
+    achievements: [
+      "Implemented game logic for Snakes and Ladders game play",
+      "Implemented intuitive controls for player movement and dice roll",
+      "Implemented UI optimization and performance improvements for enhanced user experience",
+      "Developed features like custom dice, ladders, snakes, and more",
+      "Optimized app performance and crash rates"
+    ]
   },
   {
     id: "cosm-vr-streaming",
@@ -248,7 +281,8 @@ export const projects: Project[] = [
     company: "Cosm",
     year: "2020-2021",
     achievements: [
-      "Successfully broadcast Tokyo Olympics 2020 in VR",
+      "Implemened core featured for broadcasting Tokyo Olympics 2020 in VR",
+      "Worked on UIs for stats, camera controls, and more",
       "Implemented social features for shared viewing experiences",
       "Optimized performance across multiple VR platforms"
     ]
@@ -256,16 +290,18 @@ export const projects: Project[] = [
   {
     id: "epic-cricket",
     title: "Epic Cricket",
-    shortDescription: "Feature-rich cricket game with dynamic tournaments and stadiums.",
-    detailedDescription: "Developed Epic Cricket, a comprehensive cricket game featuring dynamic tournaments, player abilities, and dynamic stadiums. Created a highly reusable tournament architecture that allowed new tournament types through simple configuration changes.",
+    shortDescription: "Feature-rich 3D cricket game with dynamic tournaments and stadiums.",
+    detailedDescription: "Developed Epic Cricket, a comprehensive 3D cricket game featuring dynamic tournaments, player abilities, and dynamic stadiums. Created a highly reusable tournament architecture that allowed new tournament types through simple configuration changes.",
     techStack: ["Unity 3D", "C#", "Android Studio"],
     platforms: ["Android"],
     company: "Moonglabs Technologies",
     year: "2018-2019",
     achievements: [
-      "Designed modular tournament system",
-      "Implemented dynamic stadium generation",
-      "Optimized app size and performance for Android"
+      "Designed and implemented modular tournament system",
+      "Implemented player abilities and animations for different cricket shots",
+      "Implemented dynamic stadium generation with asset bundles",
+      "Optimized app size and performance for Android",
+      "Implemented UI optimization and performance improvements for enhanced user experience"
     ]
   },
   {
@@ -280,9 +316,9 @@ export const projects: Project[] = [
   },
   {
     id: "vr-education-brain",
-    title: "The Human Brain VR",
+    title: "Human Brain VR Simulation",
     shortDescription: "Educational VR experience for exploring brain structure and functions.",
-    detailedDescription: "Developed an interactive VR simulation for understanding the human brain's structure and functions. Implemented detailed 3D models, interactive learning modules, and engaging educational content for students.",
+    detailedDescription: "Created an immersive VR educational simulation allowing students to explore the human brain in 3D. Developed interactive elements for understanding brain anatomy, blood flow, and nervous system in an engaging way.",
     techStack: ["Unity 3D", "C#", "VR SDKs", "Oculus", "HTC Vive", "GearVR"],
     platforms: ["Android", "Oculus Quest", "HTC Vive", "GearVR", "Cardboard", "PICO"],
     company: "Veative Labs",
@@ -297,10 +333,5 @@ export const projects: Project[] = [
     platforms: ["Android", "Oculus Quest", "HTC Vive", "GearVR", "Cardboard", "PICO"],
     company: "Veative Labs",
     year: "2016-2018",
-    achievements: [
-      "Developed 20+ VR educational projects",
-      "Led team of 15-20 developers",
-      "Ensured cross-platform VR compatibility"
-    ]
   }
 ];
