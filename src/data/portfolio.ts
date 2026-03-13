@@ -7,9 +7,15 @@ export interface Project {
   image?: string[];
   video?: string[];
   platforms?: string[];
+  platformLinks?: PlatformLink[];
   company?: string;
   year?: string;
   achievements?: string[];
+}
+
+export interface PlatformLink {
+  platform: string;
+  link: string;
 }
 
 export interface Experience {
@@ -189,12 +195,44 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    id: "shopkart-shopping-app",
+    title: "ShopKart - Shopping App",
+    shortDescription: "A shopping experience for users to browse and buy products.",
+    detailedDescription: "ShopKart is a shopping experience for users to browse and buy products. It is a fully responsive shopping app with a modern design and a user-friendly interface.",
+    techStack: ["Next.js", "Tailwind CSS", "TypeScript", "CursorAI", "Supabase", "MongoDB", "Netlify", "RESTful APIs"],
+    platforms: ["Web"],
+    platformLinks: [
+      {
+        platform: "Github",
+        link: "https://github.com/Tarun7827/product-catalogue"
+      }
+    ],
+    company: "Self",
+    achievements: [
+      "Implemented a fully responsive shopping app with a modern design and a user-friendly interface",
+      "Implemented a RESTful API for the shopping app",
+      "Implemented a Supabase authentication for the shopping app",
+      "Implemented a MongoDB for products listing and PostgreSQL database for orders and transactions management",
+      "Implemented a Payment Gateway integration for seamless transactions"
+    ]
+  },
+  {
     id: "tez-rummy",
     title: "Tez Rummy",
     shortDescription: "A real-money rummy game with real-time multiplayer and tournament systems.",
     detailedDescription: "Tez Rummy is a real-money rummy game with real-time multiplayer and tournament systems. It features a competitive rummy game. The app also includes a KYC and Wallet system for secure and seamless gameplay.",
     techStack: ["React Native", "JavaScript", "TypeScript", "CursorAI", "FigmaMCP", "RESTful APIs", "Socket.io", "Android Studio", "Xcode"],
     platforms: ["Android", "iOS"],
+    platformLinks: [
+      {
+        platform: "Android",
+        link: "https://www.tezrummy.in/"
+      },
+      {
+        platform: "iOS",
+        link: "https://apps.apple.com/in/app/tez-rummy-online-card-games/id6738627101"
+      }
+    ],
     company: "Zupee",
     year: "2021-Present",
     achievements: [
@@ -226,6 +264,12 @@ export const projects: Project[] = [
     detailedDescription: "Developed Zupee Super Over, a rapid-fire cricket game that captures the thrill of cricket's Super Over format. In the game both user and opponent choose a score desplayed button. User with higher score wins the game.",
     techStack: ["React Native", "JavaScript", "TypeScript", "CursorAI", "RESTful APIs", "Socket.io", "Android Studio"],
     platforms: ["Android"],
+    platformLinks: [
+      {
+        platform: "Android",
+        link: "https://www.zupee.com/super-over/"
+      }
+    ],
     company: "Zupee",
     year: "2021-Present",
     achievements: [
@@ -243,6 +287,12 @@ export const projects: Project[] = [
     detailedDescription: "Carrom Ninja is a fun and challenging carrom game with real-time multiplayer. It features a competitive carrom game.",
     techStack: ["Unity 3D", "C#", "Socket.io", "RESTful APIs", "Android Studio"],
     platforms: ["Android"],
+    platformLinks: [
+      {
+        platform: "Android",
+        link: "https://www.zupee.com/carrom-ninja/"
+      }
+    ],
     company: "Zupee",
     year: "2021-Present",
     achievements: [
@@ -261,6 +311,16 @@ export const projects: Project[] = [
     detailedDescription: "Snakes and Ladders Plus is a fun and challenging board game with real-time multiplayer. It features a competitive snakes and ladders game.",
     techStack: ["React Native", "JavaScript", "TypeScript", "CursorAI", "FigmaMCP", "RESTful APIs", "Socket.io", "Android Studio"],
     platforms: ["Android"],
+    platformLinks: [
+      {
+        platform: "Android",
+        link: "https://www.zupee.com/snakes-and-ladders-plus/"
+      },
+      {
+        platform: "iOS",
+        link: "https://apps.apple.com/in/app/zupee-play-ludo-watch-tv/id1576310504"
+      }
+    ],
     company: "Zupee",
     year: "2021-Present",
     achievements: [
@@ -294,6 +354,12 @@ export const projects: Project[] = [
     detailedDescription: "Developed Epic Cricket, a comprehensive 3D cricket game featuring dynamic tournaments, player abilities, and dynamic stadiums. Created a highly reusable tournament architecture that allowed new tournament types through simple configuration changes.",
     techStack: ["Unity 3D", "C#", "Android Studio"],
     platforms: ["Android"],
+    platformLinks: [
+      {
+        platform: "Android",
+        link: "https://play.google.com/store/apps/details?id=com.moonglabs.epiccricket"
+      }
+    ],
     company: "Moonglabs Technologies",
     year: "2018-2019",
     achievements: [
