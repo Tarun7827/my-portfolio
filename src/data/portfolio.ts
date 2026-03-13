@@ -234,7 +234,7 @@ export const projects: Project[] = [
       }
     ],
     company: "Zupee",
-    year: "2021-Present",
+    year: "2021 - Present",
     achievements: [
       "Designed reusable tournament module",
       "Implemeented KYC and Wallet system",
@@ -249,8 +249,11 @@ export const projects: Project[] = [
     detailedDescription: "Ludo Gold Rush is a multiplayer Free to Play Ludo Game with cool features like kingdom building and upgrading, power-ups, daily rewards, and more",
     techStack: ["Unity 3D", "C#", "Socket.io", "RESTful APIs", "Android Studio"],
     platforms: ["Android", "iOS"],
+    video: [
+      "https://drive.google.com/file/d/1onWQaQfqQv-69v0U5zqWqFALLZJGBF6n/preview"
+    ],
     company: "Zupee",
-    year: "2021-Present",
+    year: "2021 - Present",
     achievements: [
       "Implemented ludo game logic and scalable architecture for core feature of power-ups",
       "Led the implementation of socket and event based architecture for real-time multiplayer",
@@ -270,8 +273,11 @@ export const projects: Project[] = [
         link: "https://www.zupee.com/super-over/"
       }
     ],
+    video: [
+      "https://drive.google.com/file/d/147fzxP3OiJB9Ez_k70ciV1NCaIicP_mT/preview"
+    ],
     company: "Zupee",
-    year: "2021-Present",
+    year: "2021 - Present",
     achievements: [
       "Led the entire development of the game from ideation to release",
       "Implemented intuitive controls, and competitive multiplayer handling",
@@ -293,8 +299,11 @@ export const projects: Project[] = [
         link: "https://www.zupee.com/carrom-ninja/"
       }
     ],
+    video: [
+      "https://drive.google.com/file/d/1BiuSZOIzBXLTlwYZBmOFLFdCa25C_V0L/preview"
+    ],
     company: "Zupee",
-    year: "2021-Present",
+    year: "2021 - Present",
     achievements: [
       "Led the entire development of the game from ideation to release",
       "Implemented intuitive controls for striker movement, power for shot",
@@ -321,8 +330,11 @@ export const projects: Project[] = [
         link: "https://apps.apple.com/in/app/zupee-play-ludo-watch-tv/id1576310504"
       }
     ],
+    video: [
+      "https://drive.google.com/file/d/1b12bNFpDHAbw9JHnCw_YYikC3VB6bm1V/preview"
+    ],
     company: "Zupee",
-    year: "2021-Present",
+    year: "2021 - Present",
     achievements: [
       "Implemented game logic for Snakes and Ladders game play",
       "Implemented intuitive controls for player movement and dice roll",
@@ -339,7 +351,7 @@ export const projects: Project[] = [
     techStack: ["Unity 3D", "C#", "VR SDKs", "Android Studio", "Xcode"],
     platforms: ["Android", "iOS", "Oculus Quest", "Quest 2", "Samsung GearVR", "Cardboard", "PICO"],
     company: "Cosm",
-    year: "2020-2021",
+    year: "2020 - 2021",
     achievements: [
       "Implemened core featured for broadcasting Tokyo Olympics 2020 in VR",
       "Worked on UIs for stats, camera controls, and more",
@@ -361,7 +373,7 @@ export const projects: Project[] = [
       }
     ],
     company: "Moonglabs Technologies",
-    year: "2018-2019",
+    year: "2018 - 2019",
     achievements: [
       "Designed and implemented modular tournament system",
       "Implemented player abilities and animations for different cricket shots",
@@ -378,7 +390,7 @@ export const projects: Project[] = [
     techStack: ["Unity 3D", "C#", "VR SDKs", "Oculus", "HTC Vive", "GearVR"],
     platforms: ["Android", "Oculus Quest", "HTC Vive", "GearVR", "Cardboard", "PICO"],
     company: "Veative Labs",
-    year: "2016-2018"
+    year: "2016 - 2018"
   },
   {
     id: "vr-education-brain",
@@ -388,7 +400,7 @@ export const projects: Project[] = [
     techStack: ["Unity 3D", "C#", "VR SDKs", "Oculus", "HTC Vive", "GearVR"],
     platforms: ["Android", "Oculus Quest", "HTC Vive", "GearVR", "Cardboard", "PICO"],
     company: "Veative Labs",
-    year: "2016-2018"
+    year: "2016 - 2018"
   },
   {
     id: "vr-education-physics",
@@ -398,6 +410,6 @@ export const projects: Project[] = [
     techStack: ["Unity 3D", "C#", "VR SDKs", "Oculus", "HTC Vive"],
     platforms: ["Android", "Oculus Quest", "HTC Vive", "GearVR", "Cardboard", "PICO"],
     company: "Veative Labs",
-    year: "2016-2018",
+    year: "2016 - 2018",
   }
 ];

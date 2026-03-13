@@ -42,14 +42,16 @@ export default function MediaCarousel({ media, title }: MediaCarouselProps) {
               className="w-full h-full object-contain"
             />
           ) : (
-            <video
-              src={currentMedia.src}
-              controls
-              className="w-full h-full object-contain"
-              preload="metadata"
-            >
-              Your browser does not support the video tag.
-            </video>
+           <iframe width="560" height="315" src={currentMedia.src} title="YouTube video player" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          // <iframe src={currentMedia.src} width="640" height="480"></iframe>  
+          // <video
+            //   src={currentMedia.src}
+            //   controls
+            //   className="w-full h-full object-contain"
+            //   preload="metadata"
+            // >
+            //   Your browser does not support the video tag.
+            // </video>
           )}
         </div>
 
