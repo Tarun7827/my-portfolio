@@ -119,7 +119,7 @@ export const techStack: TechStack[] = [
   },
   {
     category: "Tools",
-    technologies: ["Cursor", "CursorAI", "Visual Studio", "JetBrains Rider", "Android Studio", "FigmaMCP", "Git", "Jenkins", "JIRA"]
+    technologies: ["Cursor", "CursorAI", "Android Studio", "Xcode", "Visual Studio", "JetBrains Rider", "FigmaMCP", "Git", "Jenkins", "JIRA"]
   },
   {
     category: "Networking",
