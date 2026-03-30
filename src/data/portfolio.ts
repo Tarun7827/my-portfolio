@@ -68,7 +68,7 @@ export const aboutData: About = {
   education: {
     degree: "Bachelor of Technology in Computer Science",
     institution: "Krishna Engineering College, AKTU",
-    year: "2011–2015",
+    year: "2011 – 2015",
   },
 };
 
@@ -276,7 +276,7 @@ export const projects: Project[] = [
       },
       {
         platform: "Website",
-        link: "https://shopkart-demo.netlify.app/cart",
+        link: "https://shopkart-demo.netlify.appS",
       },
     ],
     company: "Self",
